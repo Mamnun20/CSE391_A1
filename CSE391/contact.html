@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Mamnun Murshid Khan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="personal_homepage.html">Home</a></li>
+                <li><a href="personal_homepage.html#about">About</a></li>
+                <li><a href="personal_homepage.html#education">Education</a></li>
+                <li><a href="personal_homepage.html#skills">Technical Skills</a></li>
+                <li><a href="personal_homepage.html#favorites">Favorites</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h2>Contact Information</h2>
+            <p>If you'd like to get in touch, here are the best ways to reach me.</p>
+
+            <div class="contact-grid">
+                <div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:mamnun.murshid.khan@g.bracu.ac.bd">mamnun.murshid.khan@g.bracu.ac.bd</a></p>
+                </div>
+
+                <div>
+                    <h3>Phone</h3>
+                    <p>+880 1977266161</p>
+                </div>
+
+                <div>
+                    <h3>Social</h3>
+                    <p><a href="https://www.facebook.com/araz.khan.507" target="_blank">Facebook</a></p>
+                    <p><a href="https://www.instagram.com/ak.20vz/" target="_blank" >Instagram</a></p>
+                </div>
+            </div>
+
+            <hr>
+            <div id="page-info"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Mamnun Murshid Khan. All rights reserved.</p>
+        </div>
+    </footer>
+    <script> 
+        const pageInfoEl = document.getElementById('page-info');
+        if (pageInfoEl) {
+            pageInfoEl.innerHTML =
+                'Page Location: ' + window.location.href + '<br>' +
+                'Last Modified: ' + document.lastModified;
+        }
+    </script>
+</body>
+</html>
