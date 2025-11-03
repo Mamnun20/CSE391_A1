@@ -1,0 +1,45 @@
+/* Simple page stylesheet: white background and two colored buttons */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background: #ffffff;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+.container {
+    text-align: center;
+}
+h1 {
+    margin-bottom: 18px;
+    color: #111827;
+}
+.nav-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.12s ease, filter 0.12s ease;
+}
+.btn:hover { transform: translateY(-2px); filter: brightness(0.96); }
+.btn-stopwatch { background: #22c55e; }
+.btn-fortune { background: #3b82f6; }
+
+/* small responsive tweak */
+@media (max-width: 480px) {
+    .nav-buttons { flex-direction: column; }
+}
